@@ -4,11 +4,10 @@ export default function About() {
   return (
     <section id="about">
       <div>
-        <p className="section-label fade-in">About the Event</p>
+        <p className="section-label fade-in">About TEDXIUL</p>
         <h2 className="about-heading fade-in">Where Ideas <em>Tessellate</em> Into Impact</h2>
         <p className="about-body fade-in">
-          TEDxIntegralUniversity is an independently organized TED event bringing together
-          thinkers, innovators, and storytellers to share ideas worth spreading.
+          TEDxIUL brings together visionary speakers, innovators, entrepreneurs, and changemakers to inspire meaningful conversations and impactful ideas.
         </p>
         <p className="about-body fade-in">
           Our theme <strong>"TESSELLATION"</strong> — From Individual Ideas to Collective
