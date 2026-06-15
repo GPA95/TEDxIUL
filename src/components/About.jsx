@@ -15,7 +15,7 @@ export default function About() {
           than any single piece alone. Like tiles in a mosaic, every voice matters.
         </p>
         <a href="#speakers" className="btn-primary fade-in" style={{ marginTop: '20px', display: 'inline-block' }}>
-          Meet Our Speakers
+          Explore Speakers
         </a>
       </div>
       <div className="fade-in">
