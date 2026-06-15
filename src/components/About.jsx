@@ -5,7 +5,7 @@ export default function About() {
     <section id="about">
       <div>
         <p className="section-label fade-in">About TEDXIUL</p>
-        <h2 className="about-heading fade-in">Where Ideas <em>Tessellate</em> Into Impact</h2>
+        <h2 className="about-heading fade-in">Ideas That Shape The Future</h2>
         <p className="about-body fade-in">
           TEDxIUL brings together visionary speakers, innovators, entrepreneurs, and changemakers to inspire meaningful conversations and impactful ideas.
         </p>
