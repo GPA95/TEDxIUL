@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Countdown from './components/Countdown';
 import Tickets from './components/Tickets';
 import About from './components/About';
+import AboutTed from './components/AboutTed';
 import Theme from './components/Theme';
 import Schedule from './components/Schedule';
 import Speakers from './components/Speakers';
@@ -21,6 +22,7 @@ function App() {
       <Countdown />
       <Tickets />
       <About />
+      <AboutTed />
       <Theme />
       <Schedule />
       <Speakers />
