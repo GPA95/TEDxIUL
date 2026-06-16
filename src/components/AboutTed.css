@@ -1,0 +1,91 @@
+/* ── ABOUT TED & TEDx ── */
+#about-ted {
+  padding: 0 48px 120px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  position: relative;
+}
+
+.ted-card {
+  background: var(--gray);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  padding: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.ted-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--red), rgba(107, 63, 160, 0.8));
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.ted-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(230, 43, 30, 0.4);
+  box-shadow: 0 12px 40px rgba(230, 43, 30, 0.08);
+}
+
+.ted-card:hover::after {
+  opacity: 1;
+}
+
+.ted-card-label {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.ted-card-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(22px, 2.5vw, 32px);
+  line-height: 1.25;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.ted-card-heading em {
+  font-style: italic;
+  color: var(--red);
+}
+
+.ted-card-body {
+  color: rgba(245, 240, 234, 0.55);
+  font-size: 14px;
+  line-height: 1.85;
+  margin-bottom: 32px;
+  flex-grow: 1;
+}
+
+.ted-card-btn {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  #about-ted {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 24px 80px;
+  }
+  
+  .ted-card {
+    padding: 36px 24px;
+  }
+}
