@@ -9,7 +9,8 @@ export default function AboutTed() {
           Ideas Worth <em>Spreading</em>
         </h3>
         <p className="ted-card-body">
-          TED is a nonprofit, nonpartisan organization dedicated to discovering, debating and spreading ideas that spark conversation, deepen understanding and drive meaningful change. Our organization is devoted to curiosity, reason, wonder and the pursuit of knowledge — without an agenda. We welcome people from every discipline and culture who seek a deeper understanding of the world and connection with others, and we invite everyone to engage with ideas and activate them in your community.
+          Great ideas have the power to change the world, but only when they are shared. TED is a global platform that brings together thinkers, innovators, creators, and changemakers to share ideas that inspire action and spark meaningful conversations.
+       From science and technology to education, art, and social impact, TED Talks encourage curiosity, challenge perspectives, and help people discover new ways of thinking. Every talk begins with one idea—and that idea can inspire millions.
         </p>
         <a
           href="https://www.ted.com/about"
@@ -27,7 +28,8 @@ export default function AboutTed() {
           Ideas Worth Spreading, <em>Locally</em>
         </h3>
         <p className="ted-card-body">
-          In the spirit of discovering and spreading ideas, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where <em>x</em> = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized.
+        TEDx brings the spirit of TED to local communities, creating a space where ideas, stories, and experiences come together. These independently organized events connect passionate individuals who want to learn, share, and inspire positive change.
+         At TEDxIUL, students, innovators, entrepreneurs, and leaders come together to explore bold ideas, meaningful conversations, and fresh perspectives. It is more than an event—it is an opportunity to connect, grow, and become part of a community driven by curiosity and impact.
         </p>
         <a
           href="https://www.ted.com/about/programs-initiatives/tedx-program"
