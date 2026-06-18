@@ -218,7 +218,7 @@ For now, the focus is a stable, presentable **frontend prototype**.
 
 - **[Ammaar Ahmad Khan](https://github.com/GPA95)** – Repo owner, React structure, architecture, Venue/AboutTed, Navbar/Hero responsiveness
 - **[Abdul Malik](https://github.com/abdulmalik812)** – Original HTML/CSS/JS prototype
-- **[Yazdaan Wali](https://github.com/yazdaanwali)** – Content (About, Theme, FAQs, Schedule), UI copy and text refinements
+- **[Mohammad Yazdaan Wali Khan](https://github.com/yazdaanwali)** – Content (About, Theme, FAQs, Schedule), UI copy and text refinements
 - **[Owais Raza](https://github.com/oraza7867)** – Inspired the React components and advanced features for future updates
 
 New contributors: please open an issue or contact the team before starting work on a new feature or large refactor.
