@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import tedxNetwork from '../assets/tedx-network.png';
 import './About.css';
 
@@ -16,9 +16,13 @@ export default function About() {
           Impact celebrates how distinct perspectives, when placed together form a pattern larger and more beautiful
           than any single piece alone. Like tiles in a mosaic, every voice matters.
         </p>
-        <a href="#speakers" className="btn-primary fade-in" style={{ marginTop: '20px', display: 'inline-block' }}>
-          Explore Speakers
-        </a>
+        <Link
+  to="/about-tedxiul"
+  className="btn-primary fade-in"
+  style={{ marginTop: "20px", display: "inline-block" }}
+>
+  Explore Speakers
+</Link>
       </div>
       <div className="about-img-box">
   <img

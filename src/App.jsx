@@ -1,4 +1,13 @@
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import AboutTED from "./pages/AboutTED";
+import AboutTEDxIUL from "./pages/AboutTEDxIUL";
+import Organizers from "./pages/Organizers";
+import CoOrganizers from "./pages/CoOrganizers";
+import TeamLeads from "./pages/TeamLeads";
+import TeamMembers from "./pages/TeamMembers";
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Countdown from './components/Countdown';
@@ -15,24 +24,19 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <Countdown />
-      <Tickets />
-      <About />
-      <AboutTed />
-      <Theme />
-      <Schedule />
-      <Speakers />
-      <Sponsors />
-      <FAQ />
-      <Venue />
-      <Contact />
-      <Footer />
-    </>
-  );
+ return (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about-ted" element={<AboutTED />} />
+      <Route path="/about-tedxiul" element={<AboutTEDxIUL />} />
+      <Route path="/organizers" element={<Organizers />} />
+      <Route path="/co-organizers" element={<CoOrganizers />} />
+      <Route path="/team-leads" element={<TeamLeads />} />
+      <Route path="/team-members" element={<TeamMembers />} />
+    </Routes>
+  </BrowserRouter>
+);
 }
 
 export default App;
