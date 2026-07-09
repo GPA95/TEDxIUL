@@ -390,8 +390,8 @@ function Ticket({ pass, isSelected, onSelect }) {
 
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
-    const rotateX = ((y - centerY) / centerY) * -8;
-    const rotateY = ((x - centerX) / centerX) * 8;
+    const rotateX = ((y - centerY) / centerY) * -3;
+    const rotateY = ((x - centerX) / centerX) * 3;
 
     cardRef.current.style.setProperty('--rx', `${rotateX}deg`);
     cardRef.current.style.setProperty('--ry', `${rotateY}deg`);
