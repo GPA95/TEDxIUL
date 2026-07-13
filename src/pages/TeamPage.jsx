@@ -38,25 +38,16 @@ export default function TeamPage() {
       <section className="team-section">
         <div className="section-divider"></div>
 
-   <div className="team-section-header">
-
     <div className="team-section-header">
-
-    <h2 className="section-title">
-        Organizing <span className="accent">Coordinators</span>
-    </h2>
-
-  
-
-</div>
-
-    <p className="section-subtitle">
-        The visionaries shaping the inaugural
-        TEDxIntegralUniversity experience through leadership,
-        innovation, and collaboration.
-    </p>
-
-</div>
+        <h2 className="section-title">
+            Organizing <span className="accent">Coordinators</span>
+        </h2>
+        <p className="section-subtitle">
+            The visionaries shaping the inaugural
+            TEDxIntegralUniversity experience through leadership,
+            innovation, and collaboration.
+        </p>
+    </div>
 
     <div className="team-grid">
 <div className="team-card">
@@ -318,8 +309,6 @@ export default function TeamPage() {
 
 </div>
 
-    </div>
-        <div className="committee-grid">
         <div className="committee-card">
 
     <div className="committee-header">
@@ -375,8 +364,6 @@ export default function TeamPage() {
 
 </div>
 
-    </div>
-<div className="committee-grid">
         <div className="committee-card">
 
     <div className="committee-header">
@@ -410,8 +397,7 @@ export default function TeamPage() {
 
     </div>
 </div>
-    </div>
-    <div className="committee-grid">
+
         <div className="committee-card">
 
     <div className="committee-header">
@@ -458,8 +444,6 @@ export default function TeamPage() {
 
 </div>
 
-    </div>
-    <div className="committee-grid">
         <div className="committee-card">
 
      <div className="committee-header">
@@ -493,8 +477,7 @@ export default function TeamPage() {
 
     </div>
 </div>
-    </div>
-    <div className="committee-grid">
+
         <div className="committee-card">
 
      <div className="committee-header">
@@ -542,8 +525,6 @@ export default function TeamPage() {
 
 </div>
 
-    </div>
-<div className="committee-grid">
         <div className="committee-card">
 
      <div className="committee-header">
@@ -591,8 +572,6 @@ export default function TeamPage() {
 
 </div>
 
-    </div>
-    <div className="committee-grid">
         <div className="committee-card">
 
      <div className="committee-header">
@@ -627,8 +606,7 @@ export default function TeamPage() {
 
     </div>
 </div>
-    </div>
-    <div className="committee-grid">
+
         <div className="committee-card">
 
       <div className="committee-header">
@@ -663,8 +641,7 @@ export default function TeamPage() {
 
     </div>
 </div>
-    </div>
-    <div className="committee-grid">
+
         <div className="committee-card">
 
       <div className="committee-header">
