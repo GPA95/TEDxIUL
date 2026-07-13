@@ -1,12 +1,10 @@
 import './Hero.css';
-import lkoBg from '../assets/LKO.png';
 import tedxHeroLogo from '../assets/tedx-logo-clean.svg';
 
 export default function Hero() {
   return (
-    <section id="hero" style={{ backgroundImage: `url(${lkoBg})` }}>
+    <section id="hero">
       <canvas id="heroCanvas"></canvas>
-      <div className="hero-overlay"></div>
       <div className="hero-content">
         <div className="hero-logo-row">
           <img src={tedxHeroLogo} alt="TEDxIntegralUniversity" className="hero-logo-img" />
