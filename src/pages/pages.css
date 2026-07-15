@@ -1365,6 +1365,7 @@
 ════════════════════════════════════════════════════ */
 
 @media (max-width: 768px) {
+
   /* About Layout: collapse and reverse order (image on top) */
   .about-layout {
     grid-template-columns: 1fr;

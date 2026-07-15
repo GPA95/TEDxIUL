@@ -218,7 +218,7 @@ export default function TeamPage() {
 
 </div>
 </div>
-<div className="team-card last-card">
+<div className="team-card">
     
     <img
         src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600"

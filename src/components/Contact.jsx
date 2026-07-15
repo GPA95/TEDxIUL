@@ -1,13 +1,17 @@
 import './Contact.css';
 
-export default function Contact() {
+export default function Contact({ hideHeader = false }) {
   return (
     <section id="contact">
       <div className="contact-inner">
         <div>
-          <p className="section-label fade-in">Say Hello</p>
-          <h2 className="contact-heading fade-in">Get In <span className="accent">Touch</span></h2>
-          <p className="contact-sub fade-in">Have a question or want to collaborate? Send us a message.</p>
+          {!hideHeader && (
+            <>
+              <p className="section-label fade-in">Say Hello</p>
+              <h2 className="contact-heading fade-in">Get In <span className="accent">Touch</span></h2>
+              <p className="contact-sub fade-in">Have a question or want to collaborate? Send us a message.</p>
+            </>
+          )}
           <div className="form-row">
             <div className="ff">
               <label>Full Name</label>

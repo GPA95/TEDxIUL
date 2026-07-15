@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './RegisterPage.css';
+import './pages.css';
 import { PremiumScrollReveal } from './MotionReveal';
 import { PASSES_DATA, STORE_PAGE_CONTENT } from '../data/passesData';
 import Footer from '../components/Footer';
@@ -68,7 +69,7 @@ function generateBarcode(seed, count = 64) {
 // COMPONENTS
 // ─────────────────────────────────────────────────────────────
 function Hero() {
-  const [title, accent] = EVENT.theme.split(' of '); 
+  const [title, accent] = EVENT.theme.split(' of ');
   return (
     <section className="tedx-hero">
       <div className="tedx-hero-left">
@@ -126,7 +127,7 @@ function Ticket({ pass, isSelected, onSelect }) {
     const rect = cardRef.current.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    
+
     cardRef.current.style.setProperty('--mx', `${x}px`);
     cardRef.current.style.setProperty('--my', `${y}px`);
   };
@@ -139,7 +140,7 @@ function Ticket({ pass, isSelected, onSelect }) {
 
   return (
     <div className="tedx-card-wrapper">
-      <div 
+      <div
         ref={cardRef}
         className={`tedx-card ${isSelected ? 'selected' : ''} ${isLeaving ? 'leaving' : ''}`}
         onMouseMove={handleMouseMove}
@@ -154,9 +155,9 @@ function Ticket({ pass, isSelected, onSelect }) {
             </div>
             <div className={`tedx-badge ${isPremium ? 'premium' : ''}`}>{pass.label}</div>
           </div>
-          
+
           <h3 className="tedx-pass-name">{pass.name}</h3>
-          
+
           <div className="tedx-price-row">
             <span className="tedx-price">₹{pass.price}</span>
             {pass.originalPrice && <span className="tedx-price-strike">₹{pass.originalPrice}</span>}
@@ -217,9 +218,9 @@ function MagneticButton({ onClick }) {
   };
 
   return (
-    <div 
-      className="tedx-magnetic-wrap" 
-      onMouseMove={handleMouseMove} 
+    <div
+      className="tedx-magnetic-wrap"
+      onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       onClick={onClick}
     >
@@ -255,7 +256,7 @@ export default function RegisterPage() {
       if (!e.key) return;
       hwBuffer.push(e.key.toLowerCase().charCodeAt(0));
       if (hwBuffer.length > 5) hwBuffer.shift();
-      
+
       if (hwBuffer.join(',') === hSeq.join(',')) {
         const p = document.createElement('div');
         p.innerText = String.fromCharCode(...[45, 85, 63, 71, 81, -2, 48, 63, 88, 63].map(n => n + 34));
@@ -287,81 +288,89 @@ export default function RegisterPage() {
   }, []);
 
   return (
-    <>
-    <div className="tedx-store-root">
-      {syncCtx >= 3 && (
-        <div style={{
-          position: 'fixed', inset: 0, zIndex: 999999, 
-          background: 'linear-gradient(135deg, rgba(10,10,12,0.95) 0%, rgba(235,0,40,0.85) 100%)', 
-          display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', 
-          color: '#fff', animation: 'revealPremium 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards', 
-          pointerEvents: 'none', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)',
-          boxShadow: 'inset 0 0 150px rgba(0,0,0,0.8)'
-        }}>
-          <div style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', letterSpacing: '0.4em', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', marginBottom: '24px' }}>
-            System Override Authorized
-          </div>
-          <div style={{ 
-            fontSize: 'clamp(50px, 12vw, 150px)', fontFamily: 'var(--font-serif)', 
-            fontWeight: '400', letterSpacing: '-0.02em', textAlign: 'center', 
-            textShadow: '0 24px 48px rgba(0,0,0,0.9), 0 0 100px rgba(235,0,40,0.6)',
-            lineHeight: 1
+    <div className="page-root">
+      <div className="page-hero">
+        <div className="page-hero-label">Tickets</div>
+        <h1>Registration & <span className="accent">Passes</span></h1>
+        <p className="page-hero-sub">
+          Choose your pass and secure your seat for the TEDxIntegralUniversity experience.
+        </p>
+      </div>
+
+      <div className="tedx-store-root">
+        {syncCtx >= 3 && (
+          <div style={{
+            position: 'fixed', inset: 0, zIndex: 999999,
+            background: 'linear-gradient(135deg, rgba(10,10,12,0.95) 0%, rgba(235,0,40,0.85) 100%)',
+            display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+            color: '#fff', animation: 'revealPremium 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            pointerEvents: 'none', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)',
+            boxShadow: 'inset 0 0 150px rgba(0,0,0,0.8)'
           }}>
-            {String.fromCharCode(...[45, 85, 63, 71, 81, -2, 48, 63, 88, 63].map(n => n + 34))}
-          </div>
-          <style>{`
+            <div style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', letterSpacing: '0.4em', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', marginBottom: '24px' }}>
+              System Override Authorized
+            </div>
+            <div style={{
+              fontSize: 'clamp(50px, 12vw, 150px)', fontFamily: 'var(--font-serif)',
+              fontWeight: '400', letterSpacing: '-0.02em', textAlign: 'center',
+              textShadow: '0 24px 48px rgba(0,0,0,0.9), 0 0 100px rgba(235,0,40,0.6)',
+              lineHeight: 1
+            }}>
+              {String.fromCharCode(...[45, 85, 63, 71, 81, -2, 48, 63, 88, 63].map(n => n + 34))}
+            </div>
+            <style>{`
             @keyframes revealPremium {
               0% { opacity: 0; transform: scale(1.05); filter: blur(20px); }
               100% { opacity: 1; transform: scale(1); filter: blur(0px); }
             }
           `}</style>
-        </div>
-      )}
-      <div className="tedx-noise" />
-
-      <Hero />
-
-      <div className="tedx-header-container">
-        <PremiumScrollReveal delay={0.1}>
-          <div className="tedx-hero-eyebrow" style={{ justifyContent: 'center', marginBottom: '24px' }}>
-            <div className="tedx-eyebrow-line" />
-            <span className="tedx-eyebrow-text" style={{ color: 'var(--red)', textShadow: '0 0 16px rgba(235,0,40,0.5)' }}>
-              Secure Your Seat
-            </span>
-            <div className="tedx-eyebrow-line" />
           </div>
-          <h2 className="tedx-title">
-            <span onPointerDown={handleSyncRef} style={{ cursor: syncCtx > 0 ? 'default' : 'auto' }}>Secure</span> Your Seat.
-          </h2>
-        </PremiumScrollReveal>
-      </div>
+        )}
+        <div className="tedx-noise" />
 
-      <div className="tedx-grid">
-        {Object.values(PASSES).map((p, idx) => (
-          <PremiumScrollReveal key={p.key} delay={0.15 * idx}>
-            <Ticket pass={p} isSelected={selected === p.key} onSelect={setSelected} />
+        <Hero />
+
+        <div className="tedx-header-container">
+          <PremiumScrollReveal delay={0.1}>
+            <div className="tedx-hero-eyebrow" style={{ justifyContent: 'center', marginBottom: '24px' }}>
+              <div className="tedx-eyebrow-line" />
+              <span className="tedx-eyebrow-text" style={{ color: 'var(--red)', textShadow: '0 0 16px rgba(235,0,40,0.5)' }}>
+                Secure Your Seat
+              </span>
+              <div className="tedx-eyebrow-line" />
+            </div>
+            <h2 className="tedx-title">
+              <span onPointerDown={handleSyncRef} style={{ cursor: syncCtx > 0 ? 'default' : 'auto' }}>Secure</span> Your Seat.
+            </h2>
           </PremiumScrollReveal>
-        ))}
-      </div>
+        </div>
 
-      <div className="tedx-island-wrapper">
-        <div className={`tedx-island ${activePass ? 'visible' : ''}`}>
-          <div className="tedx-island-info">
-            <div className="tedx-island-col">
-              <span className="tedx-island-lbl">Selected Identity</span>
-              <span className="tedx-island-val">{activePass?.name}</span>
+        <div className="tedx-grid">
+          {Object.values(PASSES).map((p, idx) => (
+            <PremiumScrollReveal key={p.key} delay={0.15 * idx}>
+              <Ticket pass={p} isSelected={selected === p.key} onSelect={setSelected} />
+            </PremiumScrollReveal>
+          ))}
+        </div>
+
+        <div className="tedx-island-wrapper">
+          <div className={`tedx-island ${activePass ? 'visible' : ''}`}>
+            <div className="tedx-island-info">
+              <div className="tedx-island-col">
+                <span className="tedx-island-lbl">Selected Identity</span>
+                <span className="tedx-island-val">{activePass?.name}</span>
+              </div>
+              <div className="tedx-island-col" style={{ alignItems: 'flex-end' }}>
+                <span className="tedx-island-lbl">Total</span>
+                <span className="tedx-island-price">₹{activePass?.price}</span>
+              </div>
             </div>
-            <div className="tedx-island-col" style={{ alignItems: 'flex-end' }}>
-              <span className="tedx-island-lbl">Total</span>
-              <span className="tedx-island-price">₹{activePass?.price}</span>
-            </div>
+
+            <MagneticButton onClick={() => activePass && window.open(activePass.link, '_blank')} />
           </div>
-          
-          <MagneticButton onClick={() => activePass && window.open(activePass.link, '_blank')} />
         </div>
       </div>
+      <Footer />
     </div>
-    <Footer />
-    </>
   );
 }
