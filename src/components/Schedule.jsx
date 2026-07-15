@@ -1,12 +1,62 @@
+import { useEffect, useRef, useState } from 'react';
 import './Schedule.css';
 
+const LED_STRIP_COUNT = 45;
+
 export default function Schedule() {
+  const timelineRef = useRef(null);
+  const [activeStrips, setActiveStrips] = useState(0);
+
+  useEffect(() => {
+    let animationFrame;
+
+    const updateProgress = () => {
+      const timeline = timelineRef.current;
+      if (!timeline) return;
+
+      const bounds = timeline.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+      const startLine = viewportHeight * 0.72;
+      const endLine = viewportHeight * 0.28;
+      const travelDistance = Math.max(bounds.height + startLine - endLine, 1);
+      const progress = Math.min(1, Math.max(0, (startLine - bounds.top) / travelDistance));
+
+      setActiveStrips(Math.round(progress * LED_STRIP_COUNT));
+    };
+
+    const onScroll = () => {
+      cancelAnimationFrame(animationFrame);
+      animationFrame = requestAnimationFrame(updateProgress);
+    };
+
+    updateProgress();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+
+    return () => {
+      cancelAnimationFrame(animationFrame);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, []);
+
   return (
     <section id="schedule">
       <p className="section-label fade-in">Event Schedule</p>
       <h2 className="section-title fade-in">THE <span className="accent">DAY</span></h2>
-      <div className="timeline">
-        <div className="tl-item">
+      <div className="schedule-timeline-layout">
+        <aside className="schedule-progress" aria-label="Schedule scroll progress">
+          <div className="schedule-progress-sticky" aria-hidden="true">
+            {Array.from({ length: LED_STRIP_COUNT }, (_, index) => (
+              <span
+                className={`schedule-led-strip${index < activeStrips ? ' active' : ''}`}
+                key={index}
+              />
+            ))}
+          </div>
+        </aside>
+        <div className="timeline" ref={timelineRef}>
+          <div className="tl-item">
           <div className="tl-dot"></div>
           <div className="tl-time">TBD · Entry</div>
           <div className="tl-name">Welcome <span className="tl-amp">&amp;</span> Registration</div>
@@ -76,6 +126,7 @@ export default function Schedule() {
           <div className="tl-name">Closing Ceremony</div>
           <div className="tl-desc">Felicitation, thank you, and the collective mosaic we've built together.</div>
           <span className="tl-tag">Closing</span>
+          </div>
         </div>
       </div>
     </section>
