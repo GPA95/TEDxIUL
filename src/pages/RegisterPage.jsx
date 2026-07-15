@@ -67,21 +67,6 @@ function generateBarcode(seed, count = 64) {
 // ─────────────────────────────────────────────────────────────
 // COMPONENTS
 // ─────────────────────────────────────────────────────────────
-function Masthead() {
-  return (
-    <header className="tedx-masthead">
-      <div className="tedx-brand">
-        <span className="tedx-brand-red">TED</span>x
-        <span>{EVENT.org.replace('TEDx', '')}</span>
-      </div>
-      <div className="tedx-status-pill">
-        <div className="tedx-status-dot" />
-        <span style={{ color: '#fff' }}>Registration Active</span>
-      </div>
-    </header>
-  );
-}
-
 function Hero() {
   const [title, accent] = EVENT.theme.split(' of '); 
   return (
@@ -102,6 +87,12 @@ function Hero() {
       </div>
 
       <div className="tedx-hero-right">
+        <div className="tedx-info-block" style={{ background: 'rgba(235,0,40,0.03)', borderBottom: '1px solid var(--surface-border)' }}>
+          <div className="tedx-status-pill" style={{ display: 'inline-flex', width: 'fit-content', background: 'rgba(235,0,40,0.1)', borderColor: 'rgba(235,0,40,0.2)' }}>
+            <div className="tedx-status-dot" />
+            <span style={{ color: '#fff' }}>Registration Active</span>
+          </div>
+        </div>
         <div className="tedx-info-block">
           <span className="tedx-info-label">Date</span>
           <span className="tedx-info-val large">{EVENT.date.split(' ')[0]} <span>{EVENT.date.split(' ')[1]}</span></span>
@@ -328,7 +319,6 @@ export default function RegisterPage() {
       )}
       <div className="tedx-noise" />
 
-      <Masthead />
       <Hero />
 
       <div className="tedx-header-container">
@@ -336,7 +326,7 @@ export default function RegisterPage() {
           <div className="tedx-hero-eyebrow" style={{ justifyContent: 'center', marginBottom: '24px' }}>
             <div className="tedx-eyebrow-line" />
             <span className="tedx-eyebrow-text" style={{ color: 'var(--red)', textShadow: '0 0 16px rgba(235,0,40,0.5)' }}>
-              Terminal Access
+              Secure Your Seat
             </span>
             <div className="tedx-eyebrow-line" />
           </div>
