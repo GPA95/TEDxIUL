@@ -16,7 +16,7 @@ export default function FAQ() {
   return (
     <section id="faq">
      <h2 className="faq-main-title fade-in">
-  Got Questions?
+  <span className="faq-white">Got </span><span className="faq-red">Questions?</span>
 </h2>
 
 <p className="faq-subtitle fade-in">

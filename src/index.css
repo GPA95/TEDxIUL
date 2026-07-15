@@ -31,6 +31,23 @@ body {
   overflow-x: hidden;
 }
 
+/* Ensure all sections sit above the fixed background layers */
+#hero,
+#countdown,
+#tickets,
+#about,
+#about-ted,
+#theme,
+#schedule,
+#speakers,
+#sponsors,
+#faq,
+#contact,
+footer {
+  position: relative;
+  z-index: 2;
+}
+
 /* ── NAVBAR ── */
 nav {
   position: fixed;
@@ -114,10 +131,6 @@ nav {
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  /* background-image is set via Hero.jsx inline style (Vite asset import) */
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
 }
 
 #heroCanvas {
@@ -181,33 +194,20 @@ nav {
 /* TEDx logo display */
 .hero-logo-row {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   gap: 0;
   margin-bottom: 8px;
+  margin-left: 130px;
   opacity: 0;
   animation: fadeUp 0.8s ease 0.5s forwards;
 }
 
-.hl-ted {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(28px, 5vw, 48px);
-  color: var(--red);
-  letter-spacing: 3px;
-}
-
-.hl-x {
-  font-size: clamp(14px, 2vw, 22px);
-  color: var(--red);
-  vertical-align: super;
-  margin-right: 8px;
-}
-
-.hl-org {
-  font-size: clamp(18px, 3.5vw, 36px);
-  font-weight: 300;
-  color: var(--white);
-  letter-spacing: 1px;
+.hero-logo-img {
+  height: clamp(48px, 8vw, 80px);
+  width: auto;
+  max-width: 90%;
+  object-fit: contain;
 }
 
 .hl-tagline {
@@ -689,7 +689,7 @@ nav {
 /* ── SCHEDULE ── */
 #schedule {
   padding: 120px 48px;
-  background: var(--gray);
+  background: rgba(14, 14, 30, 0.75);
   text-align: center;
 }
 
@@ -961,7 +961,7 @@ nav {
 /* ── CONTACT ── */
 #contact {
   padding: 120px 48px;
-  background: var(--gray);
+  background: rgba(14, 14, 30, 0.75);
 }
 
 .contact-inner {
@@ -1267,6 +1267,11 @@ footer {
     font-size: 10px;
     margin-top: 6px;
     padding-top: 6px;
+  }
+
+  /* Hero: center logo on mobile (remove desktop offset) */
+  .hero-logo-row {
+    margin-left: 60px;
   }
 
   /* Hero: scale down TESSELLATION, desc, and CTA buttons */
