@@ -16,7 +16,7 @@ export default function ContactPage() {
 
       <div className="page-wrap" style={{ paddingTop: '0' }}>
         <Link to="/" className="page-back-link">Home</Link>
-        <Contact />
+        <Contact hideHeader={true} />
       </div>
 
       <Footer />

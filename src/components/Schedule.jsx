@@ -3,7 +3,7 @@ import './Schedule.css';
 
 const LED_STRIP_COUNT = 45;
 
-export default function Schedule() {
+export default function Schedule({ hideHeader = false }) {
   const timelineRef = useRef(null);
   const [activeStrips, setActiveStrips] = useState(0);
 
@@ -42,8 +42,12 @@ export default function Schedule() {
 
   return (
     <section id="schedule">
-      <p className="section-label fade-in">Event Schedule</p>
-      <h2 className="section-title fade-in">THE <span className="accent">DAY</span></h2>
+      {!hideHeader && (
+        <>
+          <p className="section-label fade-in">Event Schedule</p>
+          <h2 className="section-title fade-in">THE <span className="accent">DAY</span></h2>
+        </>
+      )}
       <div className="schedule-timeline-layout">
         <aside className="schedule-progress" aria-label="Schedule scroll progress">
           <div className="schedule-progress-sticky" aria-hidden="true">
