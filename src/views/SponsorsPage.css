@@ -1,6 +1,6 @@
 /* ── SPONSORS DETAIL PAGE ── */
 
-/* 3-column grid on desktop, 5 cards: 3 top + 2 centered bottom */
+/* 3-column grid on desktop — 5 cards: 3 top, 2 centered bottom */
 .sponsors-detail-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -9,21 +9,18 @@
 }
 
 /*
-  5th card is alone in the 3rd row — center it by spanning from col 2.
-  Cards 4 and 5 sit in row 2; we want them centered.
-  Use a grid-column trick: the 4th card starts at col 1,
-  so wrap them in a sub-grid approach via CSS nth-child.
+  Center the last two cards (4th & 5th) in row 2 of 3 columns.
+  The 4th card naturally falls in col 1; shift it to col 2 of 3,
+  which centers the pair visually inside the 3-col layout.
 */
-
-/* Center the last card (5th) when it's alone */
-.sponsors-detail-grid .sponsor-card-item:last-child:nth-child(3n - 2),
-.sponsors-detail-grid .sponsor-card-item:last-child:nth-child(3n - 1) {
-  grid-column: 2 / 3;
+.sponsors-detail-grid .sponsor-card-item:nth-child(4) {
+  grid-column: 1 / 2;
+  justify-self: end;
 }
 
-/* Two cards on last row — center them */
-.sponsors-detail-grid .sponsor-card-item:nth-last-child(2):nth-child(3n + 1) {
-  grid-column: 1 / 2;
+.sponsors-detail-grid .sponsor-card-item:nth-child(5) {
+  grid-column: 2 / 3;
+  justify-self: start;
 }
 
 /* CTA block */
@@ -46,11 +43,11 @@
     margin-top: 28px;
   }
 
-  /* Reset any column overrides on mobile */
-  .sponsors-detail-grid .sponsor-card-item:last-child:nth-child(3n - 2),
-  .sponsors-detail-grid .sponsor-card-item:last-child:nth-child(3n - 1),
-  .sponsors-detail-grid .sponsor-card-item:nth-last-child(2):nth-child(3n + 1) {
+  /* Reset column overrides on mobile */
+  .sponsors-detail-grid .sponsor-card-item:nth-child(4),
+  .sponsors-detail-grid .sponsor-card-item:nth-child(5) {
     grid-column: auto;
+    justify-self: auto;
   }
 
   .sponsors-cta {

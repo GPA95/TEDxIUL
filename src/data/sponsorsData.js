@@ -38,7 +38,7 @@ const sponsorsData = [
     name: 'FC Productions',
     logo: fcphLogo,
     description:
-      'Videography and Photography team',
+      'Videography and Photography ',
   },
 ];
 

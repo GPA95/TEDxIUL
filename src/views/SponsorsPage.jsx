@@ -24,6 +24,15 @@ export default function SponsorsPage() {
             <SponsorCard key={sponsor.id} sponsor={sponsor} />
           ))}
         </div>
+
+        <div className="sponsors-cta">
+          <p className="sponsors-cta-text">
+            Interested in sponsoring TEDxIntegralUniversity 2026?
+          </p>
+          <a href="mailto:tedxiul@gmail.com" className="btn-primary">
+            Get in Touch
+          </a>
+        </div>
       </div>
 
       <Footer />
