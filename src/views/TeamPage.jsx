@@ -694,21 +694,20 @@ export default function TeamPage() {
 
                         <div className="committee-header">
 
-                            <h3>Social Media &amp; Marketing Committee</h3>
+                            <h3>Social Media Committee</h3>
 
                             <span className="committee-count">
-                                3 Leads
+                                2 Leads
                             </span>
 
                         </div>
-
 
                         <div className="committee-member">
 
                             <div className="member-dot"></div>
                             <div className="member-info">
                                 <h4>Naqi Hasan</h4>
-                                <p>Social Media</p>
+                                <p>Strategy &amp; Content</p>
                             </div>
 
                         </div>
@@ -719,7 +718,36 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Zaina Khan</h4>
-                                <p>Social Media</p>
+                                <p>Digital Engagement</p>
+                            </div>
+
+                        </div>
+
+                        <Link href="/team/social-media" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
+
+                    </div>
+
+                    <div className="committee-card">
+
+                        <div className="committee-header">
+
+                            <h3>Marketing Committee</h3>
+
+                            <span className="committee-count">
+                                2 Leads
+                            </span>
+
+                        </div>
+
+                        <div className="committee-member">
+
+                            <div className="member-dot"></div>
+                            <div className="member-info">
+                                <h4>Abdullah Khan</h4>
+                                <p>Campaigns &amp; Strategy</p>
                             </div>
 
                         </div>
@@ -729,22 +757,16 @@ export default function TeamPage() {
                             <div className="member-dot"></div>
 
                             <div className="member-info">
-                                <h4>Abdullah Khan</h4>
-                                <p>Marketing</p>
+                                <h4>Brand &amp; Promotions Lead</h4>
+                                <p>Brand Strategy</p>
                             </div>
 
                         </div>
 
-                        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                            <Link href="/team/social-media" className="committee-view-btn" style={{ flex: 1 }}>
-                                Social Media
-                                <span className="committee-view-btn-arrow">→</span>
-                            </Link>
-                            <Link href="/team/marketing" className="committee-view-btn" style={{ flex: 1 }}>
-                                Marketing
-                                <span className="committee-view-btn-arrow">→</span>
-                            </Link>
-                        </div>
+                        <Link href="/team/marketing" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
 
                     </div>
 

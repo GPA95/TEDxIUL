@@ -15,7 +15,7 @@ import './CommitteePage.css';
 export default function CommitteePage({ committee }) {
   const { name, bio, banner, members } = committee;
   const memberCount = members.length;
-  const leadCount = members.filter((m) => m.role === 'Team Lead').length;
+  const leadCount = members.filter((m) => m.isTeamLead).length;
 
   return (
     <div className="cp-root">
