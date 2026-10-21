@@ -221,6 +221,21 @@ export default function TeamPage() {
                 <div className="team-grid">
                     <div className="team-card">
 
+                        {/* ── Top-Right: Social links (revealed on hover) ── */}
+                        <div className="team-card-socials">
+                            <a
+                                href="https://www.linkedin.com/in/reem-hamraz-51511930a/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="team-card-social-icon"
+                                aria-label="Reem Hamraz on LinkedIn"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
+
                         <Image unoptimized width={1200} height={900}
                             src={reemhamraz}
                             alt="Reem Hamraz"
@@ -232,7 +247,7 @@ export default function TeamPage() {
                             <h3>Reem Hamraz</h3>
 
                             <p className="team-role">
-                                Lead Organizer
+                                Lead Organizer & Licensee
                             </p>
 
                             <div className="team-divider"></div>
@@ -245,6 +260,21 @@ export default function TeamPage() {
 
                     </div>
                     <div className="team-card">
+
+                        {/* ── Top-Right: Social links (revealed on hover) ── */}
+                        <div className="team-card-socials">
+                            <a
+                                href="https://www.linkedin.com/in/maaz-siddiqui-843778369"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="team-card-social-icon"
+                                aria-label="Mohammad Maaz Siddiqui on LinkedIn"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
 
                         <Image unoptimized width={1200} height={900}
                             src={maazsiddiqui}
@@ -293,6 +323,21 @@ export default function TeamPage() {
                 <div className="team-grid">
                     <div className="team-card">
 
+                        {/* ── Top-Right: Social links (revealed on hover) ── */}
+                        <div className="team-card-socials">
+                            <a
+                                href="https://www.linkedin.com/in/aliyah-mohammad-azam-32a07b37b"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="team-card-social-icon"
+                                aria-label="Aliyah Mohammad Azam on LinkedIn"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
+
                         <Image unoptimized width={1200} height={900}
                             src={aliyahmohammadazam}
                             alt="Aliyah Mohammad Azam"
@@ -316,6 +361,21 @@ export default function TeamPage() {
                         </div>
                     </div>
                     <div className="team-card">
+
+                        {/* ── Top-Right: Social links (revealed on hover) ── */}
+                        <div className="team-card-socials">
+                            <a
+                                href="https://www.linkedin.com/in/ariffsheikhh"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="team-card-social-icon"
+                                aria-label="Arif Sheikh on LinkedIn"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
 
                         <Image unoptimized width={1200} height={900}
                             src={arifsheikh}
@@ -342,6 +402,21 @@ export default function TeamPage() {
 
                     <div className="team-card">
 
+                        {/* ── Top-Right: Social links (revealed on hover) ── */}
+                        <div className="team-card-socials">
+                            <a
+                                href="https://www.linkedin.com/in/haidermaseeh/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="team-card-social-icon"
+                                aria-label="Haider Maseeh on LinkedIn"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
+
                         <Image unoptimized width={1200} height={900}
                             src={haidermaseeh}
                             alt="Haider Maseeh"
@@ -366,6 +441,21 @@ export default function TeamPage() {
                     </div>
 
                     <div className="team-card">
+
+                        {/* ── Top-Right: Social links (revealed on hover) ── */}
+                        <div className="team-card-socials">
+                            <a
+                                href="https://www.linkedin.com/in/jamiz-qamar?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="team-card-social-icon"
+                                aria-label="Jamiz Qamar on LinkedIn"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
 
                         <Image unoptimized width={1200} height={900}
                             src={jamizqamar}
