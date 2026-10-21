@@ -1000,6 +1000,54 @@
   left: 130%;
 }
 
+/* ── Team Card Socials (top-right, revealed on hover) ── */
+.team-card-socials {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 4;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.team-card:hover .team-card-socials {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team-card-social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(10, 10, 15, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.team-card-social-icon:hover {
+  background: var(--red);
+  border-color: var(--red);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(230, 43, 30, 0.5);
+}
+
+.team-card-social-icon svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
 .team-overlay {
   position: absolute;
   bottom: 0;
@@ -1203,6 +1251,43 @@
   margin-top: 4px;
   color: var(--text-muted);
   font-size: 0.85rem;
+}
+
+/* ── View Committee button (inside committee cards) ── */
+.committee-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 9px 16px;
+  border: 1px solid rgba(230, 43, 30, 0.4);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 100%;
+  justify-content: space-between;
+  transition: background 250ms ease, border-color 250ms ease, color 250ms ease;
+}
+
+.committee-view-btn:hover {
+  background: rgba(230, 43, 30, 0.1);
+  border-color: var(--red);
+}
+
+.committee-view-btn-arrow {
+  color: var(--red);
+  font-size: 14px;
+  transition: transform 250ms ease;
+}
+
+.committee-view-btn:hover .committee-view-btn-arrow {
+  transform: translateX(4px);
 }
 
 /* ════════════════════════════════════════════════════

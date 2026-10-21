@@ -190,7 +190,7 @@ export default function TeamPage() {
                             </p>
 
                             <span className="team-badge">
-                                Assistant Professor, CSE, Integral University
+                                Asst. Professor, CSE, Integral University
                             </span>
 
                             <div className="team-divider"></div>
@@ -221,6 +221,21 @@ export default function TeamPage() {
                 <div className="team-grid">
                     <div className="team-card">
 
+                        {/* ── Top-Right: Social links (revealed on hover) ── */}
+                        <div className="team-card-socials">
+                            <a
+                                href="https://www.linkedin.com/in/reem-hamraz-51511930a/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="team-card-social-icon"
+                                aria-label="Reem Hamraz on LinkedIn"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
+
                         <Image unoptimized width={1200} height={900}
                             src={reemhamraz}
                             alt="Reem Hamraz"
@@ -232,7 +247,7 @@ export default function TeamPage() {
                             <h3>Reem Hamraz</h3>
 
                             <p className="team-role">
-                                Lead Organizer
+                                Lead Organizer & Licensee
                             </p>
 
                             <div className="team-divider"></div>
@@ -245,6 +260,21 @@ export default function TeamPage() {
 
                     </div>
                     <div className="team-card">
+
+                        {/* ── Top-Right: Social links (revealed on hover) ── */}
+                        <div className="team-card-socials">
+                            <a
+                                href="https://www.linkedin.com/in/maaz-siddiqui-843778369"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="team-card-social-icon"
+                                aria-label="Mohammad Maaz Siddiqui on LinkedIn"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
 
                         <Image unoptimized width={1200} height={900}
                             src={maazsiddiqui}
@@ -293,6 +323,21 @@ export default function TeamPage() {
                 <div className="team-grid">
                     <div className="team-card">
 
+                        {/* ── Top-Right: Social links (revealed on hover) ── */}
+                        <div className="team-card-socials">
+                            <a
+                                href="https://www.linkedin.com/in/aliyah-mohammad-azam-32a07b37b"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="team-card-social-icon"
+                                aria-label="Aliyah Mohammad Azam on LinkedIn"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
+
                         <Image unoptimized width={1200} height={900}
                             src={aliyahmohammadazam}
                             alt="Aliyah Mohammad Azam"
@@ -316,6 +361,21 @@ export default function TeamPage() {
                         </div>
                     </div>
                     <div className="team-card">
+
+                        {/* ── Top-Right: Social links (revealed on hover) ── */}
+                        <div className="team-card-socials">
+                            <a
+                                href="https://www.linkedin.com/in/ariffsheikhh"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="team-card-social-icon"
+                                aria-label="Arif Sheikh on LinkedIn"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
 
                         <Image unoptimized width={1200} height={900}
                             src={arifsheikh}
@@ -342,6 +402,21 @@ export default function TeamPage() {
 
                     <div className="team-card">
 
+                        {/* ── Top-Right: Social links (revealed on hover) ── */}
+                        <div className="team-card-socials">
+                            <a
+                                href="https://www.linkedin.com/in/haidermaseeh/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="team-card-social-icon"
+                                aria-label="Haider Maseeh on LinkedIn"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
+
                         <Image unoptimized width={1200} height={900}
                             src={haidermaseeh}
                             alt="Haider Maseeh"
@@ -366,6 +441,21 @@ export default function TeamPage() {
                     </div>
 
                     <div className="team-card">
+
+                        {/* ── Top-Right: Social links (revealed on hover) ── */}
+                        <div className="team-card-socials">
+                            <a
+                                href="https://www.linkedin.com/in/jamiz-qamar?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="team-card-social-icon"
+                                aria-label="Jamiz Qamar on LinkedIn"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
 
                         <Image unoptimized width={1200} height={900}
                             src={jamizqamar}
@@ -427,7 +517,7 @@ export default function TeamPage() {
                             <div className="member-dot"></div>
                             <div className="member-info">
                                 <h4>Imama Bint Anwar</h4>
-                                <p>Curation</p>
+                                <p>Content Curator</p>
                             </div>
 
                         </div>
@@ -438,10 +528,15 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Faria Ahmad Quraishi</h4>
-                                <p>Blogs</p>
+                                <p>Content Lead</p>
                             </div>
 
                         </div>
+
+                        <Link href="/team/content" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
 
                     </div>
 
@@ -461,7 +556,7 @@ export default function TeamPage() {
                             <div className="member-dot"></div>
                             <div className="member-info">
                                 <h4>Gulafshan Bano</h4>
-                                <p>Props</p>
+                                <p>Stage Decor Lead</p>
                             </div>
 
                         </div>
@@ -472,7 +567,7 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Umra Khanam</h4>
-                                <p>Venue</p>
+                                <p>Creative Consultant</p>
                             </div>
 
                         </div>
@@ -483,11 +578,15 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Fazaz Ali Khan</h4>
-                                <p>Decor</p>
+                                <p>Budget Analyst</p>
                             </div>
 
                         </div>
 
+                        <Link href="/team/decor" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
 
                     </div>
 
@@ -508,7 +607,7 @@ export default function TeamPage() {
                             <div className="member-dot"></div>
                             <div className="member-info">
                                 <h4>Arman Ahmad</h4>
-                                <p>Visual</p>
+                                <p>Creative Director</p>
                             </div>
 
                         </div>
@@ -519,10 +618,15 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Areeb Usmani</h4>
-                                <p>Technical</p>
+                                <p>Visual Identity Lead</p>
                             </div>
 
                         </div>
+
+                        <Link href="/team/graphics" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
                     </div>
 
                     <div className="committee-card">
@@ -552,20 +656,10 @@ export default function TeamPage() {
                         <div className="committee-member">
 
                             <div className="member-dot"></div>
-                            <div className="member-info">
-                                <h4>Mohd Arsh Nafis</h4>
-                                <p>Inventory</p>
-                            </div>
-
-                        </div>
-
-                        <div className="committee-member">
-
-                            <div className="member-dot"></div>
 
                             <div className="member-info">
                                 <h4>Iqra Khan</h4>
-                                <p>Audit Coordination</p>
+                                <p>Event Campaign Planner</p>
                             </div>
 
                         </div>
@@ -576,10 +670,25 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Fiza Rizvi</h4>
-                                <p>Documentation</p>
+                                <p>Logistics Lead</p>
                             </div>
 
                         </div>
+
+                        <div className="committee-member">
+
+                            <div className="member-dot"></div>
+                            <div className="member-info">
+                                <h4>Devansh Srivastava</h4>
+                                <p>Inventory</p>
+                            </div>
+
+                        </div>
+
+                        <Link href="/team/logistics" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
 
                     </div>
 
@@ -637,7 +746,7 @@ export default function TeamPage() {
                             <div className="member-dot"></div>
                             <div className="member-info">
                                 <h4>Mansi Srivastava</h4>
-                                <p>Performers</p>
+                                <p>Talent Curator</p>
                             </div>
 
                         </div>
@@ -648,7 +757,7 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Ana Ajlal Farooqui</h4>
-                                <p>Formal Outreach</p>
+                                <p>Speaker Liaison</p>
                             </div>
 
                         </div>
@@ -658,11 +767,16 @@ export default function TeamPage() {
                             <div className="member-dot"></div>
 
                             <div className="member-info">
-                                <h4>Rohan Khan</h4>
-                                <p>Speakers</p>
+                                <h4>Rohaan Khan</h4>
+                                <p>Speaker Coordinator</p>
                             </div>
 
                         </div>
+
+                        <Link href="/team/outreach" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
 
                     </div>
 
@@ -670,21 +784,20 @@ export default function TeamPage() {
 
                         <div className="committee-header">
 
-                            <h3>Social Media & Marketing Committee</h3>
+                            <h3>Social Media Committee</h3>
 
                             <span className="committee-count">
-                                3 Leads
+                                2 Leads
                             </span>
 
                         </div>
-
 
                         <div className="committee-member">
 
                             <div className="member-dot"></div>
                             <div className="member-info">
                                 <h4>Naqi Hasan</h4>
-                                <p>Social Media</p>
+                                <p>Strategy &amp; Content</p>
                             </div>
 
                         </div>
@@ -695,7 +808,36 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Zaina Khan</h4>
-                                <p>Social Media</p>
+                                <p>Digital Engagement</p>
+                            </div>
+
+                        </div>
+
+                        <Link href="/team/social-media" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
+
+                    </div>
+
+                    <div className="committee-card">
+
+                        <div className="committee-header">
+
+                            <h3>Marketing Committee</h3>
+
+                            <span className="committee-count">
+                                2 Leads
+                            </span>
+
+                        </div>
+
+                        <div className="committee-member">
+
+                            <div className="member-dot"></div>
+                            <div className="member-info">
+                                <h4>Abdullah Khan</h4>
+                                <p>Campaigns &amp; Strategy</p>
                             </div>
 
                         </div>
@@ -705,11 +847,16 @@ export default function TeamPage() {
                             <div className="member-dot"></div>
 
                             <div className="member-info">
-                                <h4>Abdullah Khan</h4>
-                                <p>Marketing</p>
+                                <h4>Brand &amp; Promotions Lead</h4>
+                                <p>Brand Strategy</p>
                             </div>
 
                         </div>
+
+                        <Link href="/team/marketing" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
 
                     </div>
 
@@ -730,8 +877,8 @@ export default function TeamPage() {
 
                             <div className="member-dot"></div>
                             <div className="member-info">
-                                <h4>Humaira</h4>
-                                <p>Networking</p>
+                                <h4>Aarish Ahmad</h4>
+                                <p>Brand Partnerships</p>
                             </div>
 
                         </div>
@@ -741,47 +888,16 @@ export default function TeamPage() {
                             <div className="member-dot"></div>
 
                             <div className="member-info">
-                                <h4>Hanzala Siddique</h4>
-                                <p>Communications</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div className="committee-card">
-
-                        <div className="committee-header">
-
-                            <h3>Volunteers Committee</h3>
-
-                            <span className="committee-count">
-                                2 Leads
-                            </span>
-
-                        </div>
-
-
-                        <div className="committee-member">
-
-                            <div className="member-dot"></div>
-                            <div className="member-info">
-                                <h4>Umam Khanam</h4>
-                                <p>Management</p>
+                                <h4>Humaira Khan</h4>
+                                <p>Sponsorship Coordinator</p>
                             </div>
 
                         </div>
 
-                        <div className="committee-member">
-
-                            <div className="member-dot"></div>
-
-                            <div className="member-info">
-                                <h4>Devansh Srivastava</h4>
-                                <p>Supervision</p>
-                            </div>
-
-                        </div>
-
+                        <Link href="/team/sponsorship" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
                     </div>
 
                     <div className="committee-card">
@@ -813,10 +929,15 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Arsalaan Ul Hasan</h4>
-                                <p>Code Review</p>
+                                <p>Ticket Booking Systems</p>
                             </div>
 
                         </div>
+
+                        <Link href="/team/web-dev" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
                     </div>
 
                 </div>
