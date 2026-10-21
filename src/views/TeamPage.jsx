@@ -190,7 +190,7 @@ export default function TeamPage() {
                             </p>
 
                             <span className="team-badge">
-                                Assistant Professor, CSE, Integral University
+                                Asst. Professor, CSE, Integral University
                             </span>
 
                             <div className="team-divider"></div>
@@ -427,7 +427,7 @@ export default function TeamPage() {
                             <div className="member-dot"></div>
                             <div className="member-info">
                                 <h4>Imama Bint Anwar</h4>
-                                <p>Curation</p>
+                                <p>Content Curator</p>
                             </div>
 
                         </div>
@@ -438,10 +438,15 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Faria Ahmad Quraishi</h4>
-                                <p>Blogs</p>
+                                <p>Content Lead</p>
                             </div>
 
                         </div>
+
+                        <Link href="/team/content" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
 
                     </div>
 
@@ -461,7 +466,7 @@ export default function TeamPage() {
                             <div className="member-dot"></div>
                             <div className="member-info">
                                 <h4>Gulafshan Bano</h4>
-                                <p>Props</p>
+                                <p>Stage Decor Lead</p>
                             </div>
 
                         </div>
@@ -472,7 +477,7 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Umra Khanam</h4>
-                                <p>Venue</p>
+                                <p>Creative Consultant</p>
                             </div>
 
                         </div>
@@ -483,11 +488,15 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Fazaz Ali Khan</h4>
-                                <p>Decor</p>
+                                <p>Budget Analyst</p>
                             </div>
 
                         </div>
 
+                        <Link href="/team/decor" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
 
                     </div>
 
@@ -508,7 +517,7 @@ export default function TeamPage() {
                             <div className="member-dot"></div>
                             <div className="member-info">
                                 <h4>Arman Ahmad</h4>
-                                <p>Visual</p>
+                                <p>Creative Director</p>
                             </div>
 
                         </div>
@@ -519,10 +528,15 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Areeb Usmani</h4>
-                                <p>Technical</p>
+                                <p>Visual Identity Lead</p>
                             </div>
 
                         </div>
+
+                        <Link href="/team/graphics" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
                     </div>
 
                     <div className="committee-card">
@@ -552,20 +566,10 @@ export default function TeamPage() {
                         <div className="committee-member">
 
                             <div className="member-dot"></div>
-                            <div className="member-info">
-                                <h4>Mohd Arsh Nafis</h4>
-                                <p>Inventory</p>
-                            </div>
-
-                        </div>
-
-                        <div className="committee-member">
-
-                            <div className="member-dot"></div>
 
                             <div className="member-info">
                                 <h4>Iqra Khan</h4>
-                                <p>Audit Coordination</p>
+                                <p>Event Campaign Planner</p>
                             </div>
 
                         </div>
@@ -576,10 +580,25 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Fiza Rizvi</h4>
-                                <p>Documentation</p>
+                                <p>Logistics Lead</p>
                             </div>
 
                         </div>
+
+                        <div className="committee-member">
+
+                            <div className="member-dot"></div>
+                            <div className="member-info">
+                                <h4>Devansh Srivastava</h4>
+                                <p>Inventory</p>
+                            </div>
+
+                        </div>
+
+                        <Link href="/team/logistics" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
 
                     </div>
 
@@ -637,7 +656,7 @@ export default function TeamPage() {
                             <div className="member-dot"></div>
                             <div className="member-info">
                                 <h4>Mansi Srivastava</h4>
-                                <p>Performers</p>
+                                <p>Talent Curator</p>
                             </div>
 
                         </div>
@@ -648,7 +667,7 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Ana Ajlal Farooqui</h4>
-                                <p>Formal Outreach</p>
+                                <p>Speaker Liaison</p>
                             </div>
 
                         </div>
@@ -658,11 +677,16 @@ export default function TeamPage() {
                             <div className="member-dot"></div>
 
                             <div className="member-info">
-                                <h4>Rohan Khan</h4>
-                                <p>Speakers</p>
+                                <h4>Rohaan Khan</h4>
+                                <p>Speaker Coordinator</p>
                             </div>
 
                         </div>
+
+                        <Link href="/team/outreach" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
 
                     </div>
 
@@ -670,7 +694,7 @@ export default function TeamPage() {
 
                         <div className="committee-header">
 
-                            <h3>Social Media & Marketing Committee</h3>
+                            <h3>Social Media &amp; Marketing Committee</h3>
 
                             <span className="committee-count">
                                 3 Leads
@@ -711,6 +735,17 @@ export default function TeamPage() {
 
                         </div>
 
+                        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                            <Link href="/team/social-media" className="committee-view-btn" style={{ flex: 1 }}>
+                                Social Media
+                                <span className="committee-view-btn-arrow">→</span>
+                            </Link>
+                            <Link href="/team/marketing" className="committee-view-btn" style={{ flex: 1 }}>
+                                Marketing
+                                <span className="committee-view-btn-arrow">→</span>
+                            </Link>
+                        </div>
+
                     </div>
 
                     <div className="committee-card">
@@ -730,8 +765,8 @@ export default function TeamPage() {
 
                             <div className="member-dot"></div>
                             <div className="member-info">
-                                <h4>Humaira</h4>
-                                <p>Networking</p>
+                                <h4>Aarish Ahmad</h4>
+                                <p>Brand Partnerships</p>
                             </div>
 
                         </div>
@@ -741,47 +776,16 @@ export default function TeamPage() {
                             <div className="member-dot"></div>
 
                             <div className="member-info">
-                                <h4>Hanzala Siddique</h4>
-                                <p>Communications</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div className="committee-card">
-
-                        <div className="committee-header">
-
-                            <h3>Volunteers Committee</h3>
-
-                            <span className="committee-count">
-                                2 Leads
-                            </span>
-
-                        </div>
-
-
-                        <div className="committee-member">
-
-                            <div className="member-dot"></div>
-                            <div className="member-info">
-                                <h4>Umam Khanam</h4>
-                                <p>Management</p>
+                                <h4>Humaira Khan</h4>
+                                <p>Sponsorship Coordinator</p>
                             </div>
 
                         </div>
 
-                        <div className="committee-member">
-
-                            <div className="member-dot"></div>
-
-                            <div className="member-info">
-                                <h4>Devansh Srivastava</h4>
-                                <p>Supervision</p>
-                            </div>
-
-                        </div>
-
+                        <Link href="/team/sponsorship" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
                     </div>
 
                     <div className="committee-card">
@@ -813,10 +817,15 @@ export default function TeamPage() {
 
                             <div className="member-info">
                                 <h4>Arsalaan Ul Hasan</h4>
-                                <p>Code Review</p>
+                                <p>Ticket Booking Systems</p>
                             </div>
 
                         </div>
+
+                        <Link href="/team/web-dev" className="committee-view-btn">
+                            View Committee
+                            <span className="committee-view-btn-arrow">→</span>
+                        </Link>
                     </div>
 
                 </div>

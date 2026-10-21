@@ -1,0 +1,162 @@
+/* ── TEAM MEMBER CARD ── */
+
+.tmc-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--mid, #161628);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 250ms ease, border-color 250ms ease, box-shadow 250ms ease;
+  cursor: default;
+  position: relative;
+}
+
+.tmc-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--red, #E62B1E);
+  box-shadow:
+    0 20px 48px rgba(230, 43, 30, 0.22),
+    0 0 0 1px rgba(230, 43, 30, 0.12);
+}
+
+/* Sheen sweep on hover */
+.tmc-card::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -60%;
+  width: 55%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.08);
+  transform: rotate(25deg);
+  transition: left 0.6s ease;
+  z-index: 3;
+  pointer-events: none;
+}
+.tmc-card:hover::before {
+  left: 130%;
+}
+
+/* ── Photo ── */
+.tmc-photo-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: var(--gray, #0E0E1E);
+}
+
+.tmc-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 450ms ease;
+}
+
+.tmc-card:hover .tmc-photo {
+  transform: scale(1.05);
+}
+
+/* Gradient overlay on photo bottom */
+.tmc-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 10, 20, 0.85) 0%,
+    rgba(10, 10, 20, 0.4) 40%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+/* Team Lead badge on photo */
+.tmc-lead-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--red, #E62B1E);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+/* ── Info section ── */
+.tmc-info {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.tmc-name {
+  color: var(--white, #F5F0EA);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.tmc-role {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.tmc-role--lead {
+  color: var(--red, #E62B1E);
+}
+.tmc-role--member {
+  color: var(--text-muted, #7A7A9A);
+}
+
+/* ── Social links ── */
+.tmc-socials {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.tmc-social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  color: rgba(245, 240, 234, 0.65);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: border-color 250ms ease, color 250ms ease, background 250ms ease;
+  background: transparent;
+}
+
+.tmc-social-btn:hover {
+  border-color: var(--red, #E62B1E);
+  color: var(--white, #F5F0EA);
+  background: rgba(230, 43, 30, 0.08);
+}
+
+.tmc-social-btn svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
