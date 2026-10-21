@@ -18,11 +18,11 @@ import placeholder from '../assets/team-photos/core-committee/Haider-Maseeh.jpg'
 
 // ── Content committee member photos ──
 // Replace each import with the real photo when available
-import iba from '../assets/team-photos/content/IBA.png';
+import iba from '../assets/team-photos/content/IBA.PNG';
 import faq from '../assets/team-photos/content/FAQ.jpg';
 import aa1 from '../assets/team-photos/content/AA1.jpg';
 import aa2 from '../assets/team-photos/content/AA2.jpg';
-import at from '../assets/team-photos/content/AT.jpg';
+import at from '../assets/team-photos/content/AT.JPG';
 import if1 from '../assets/team-photos/content/IF1.png';
 import ma from '../assets/team-photos/content/MA.jpg';
 import sm from '../assets/team-photos/content/SM.jpg';
@@ -46,7 +46,7 @@ import aa4 from '../assets/team-photos/graphics/AA.jpg';
 import au from '../assets/team-photos/graphics/AU.png';
 import hz from '../assets/team-photos/graphics/HZ.jpg';
 import ns2 from '../assets/team-photos/graphics/NS2.jpg';
-import sma from '../assets/team-photos/graphics/SMA.png';
+import sma from '../assets/team-photos/graphics/SMA.PNG';
 import rf from '../assets/team-photos/graphics/RF.jpeg';
 import ak1 from '../assets/team-photos/graphics/AK1.jpg';
 
@@ -95,7 +95,7 @@ import kz from '../assets/team-photos/marketing/KZ.jpeg';
 import aak1 from '../assets/team-photos/web-dev/AAK1.png';
 import abdulMalik from '../assets/team-photos/web-dev/Abdul-Malik.jpg';
 import auh from '../assets/team-photos/web-dev/AUH.png';
-import orz from '../assets/team-photos/web-dev/ORZ.jpg';
+import orz from '../assets/team-photos/web-dev/ORZ.JPG';
 import mak from '../assets/team-photos/web-dev/MAK.png';
 import yzw from '../assets/team-photos/web-dev/YZW.jpg';
 
